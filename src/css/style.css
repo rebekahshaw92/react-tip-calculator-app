@@ -1,0 +1,152 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+body {
+    background-color: #c5e4e7; 
+    font-family: "Space Mono", monospace;
+}
+
+.header {
+    text-align: center;
+    padding: 40px;
+}
+
+.billTitle, .numberTitle {
+    color: #00494d;
+    padding-left: 40px;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+.percentage {
+  background-color: #00494d;
+  border-color: #00494d;
+  width: 190px;
+  height: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  color: #c5e4e7;
+}
+
+.tipTitle {
+    color: #00494d;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .custom {
+    text-align: right;
+    color: #00494d;
+    font-weight: 500;
+    font-size: 24px;
+    height: 45px !important;
+    width: 134px !important;
+    margin-left: 38px;
+      
+  }
+
+  .bill, .people {
+    text-align: right;
+    color: #00494d;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .bill, .people, .custom {
+    background-color: #f4fafa;
+    width: 80%;
+    border: none;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+
+  .bill:hover, .people:hover, .custom:hover {
+    border: solid 2px #26c0ab !important;
+  }
+
+  .calculator {
+  background-color: white;
+  border-radius: 30px;
+  padding: 0 auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* width: 90%; */
+  /* margin: 50px;
+  height: 550px; */
+  }
+
+  .tipAmount {
+    margin: 40px;
+    border-radius: 20px;
+    background-color: #00494d;
+    height: 85%;
+  }
+
+  .reset {
+    background-color: #26c0ab;
+    color: #00494d;
+    border-color: #26c0ab;
+    font-weight: 700;
+    margin: 40px;
+    padding: 10px;
+    font-size: 28px;
+    width: 80%;
+    font-size: 22px;
+    margin-top: 80px;
+    text-transform: uppercase;
+  }
+
+  .person {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    color: #7f9c9f;
+    font-size: 18px;
+  }
+
+  .tipAmountTitle, .totalTitle {
+    padding-left: 40px;
+    padding-top: 40px;
+    font-weight: 500;
+    color: #c5e4e7;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .amount {
+    padding-top: 50px;
+    font-weight: 700;
+    padding-right: 10px;
+    color: #26c0ab;
+    font-size: 34px;
+  }
+
+  .active.percentage {
+    color: #00494d;
+    background-color: #26c0ab;
+    border-color: #26c0ab;
+  }
+
+  @media (min-width: 992px) {
+    .calculator {
+      margin: 50px;
+      height: 550px;
+    }
+    .percentage {
+      height: 45px;
+      width: 130px;
+    }
+
+    .bill, .people {
+      width: 300px !important;
+    }
+
+    .custom {
+      height: 45px !important;
+      width: 134px !important;
+      margin-left: 38px;
+    }
+  }
