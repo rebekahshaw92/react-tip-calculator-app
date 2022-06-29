@@ -7,13 +7,12 @@ import Header from './Header';
 import Body from './Body';
 
 function App() {
-  return (
-    <body>
+  document.title = "Frontend Mentor | Tip calculator app";
+  return (  
     <div className="App">
       <Header />
       <Body />
     </div>
-    </body>
   );
 }
 

@@ -1,10 +1,37 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Row, Col, Form, Button } from 'react-bootstrap';
 
 import TipDisplay from './TipDisplay';
 
-class TipForm extends Component {
-    render(){
+const TipForm = () => {
+
+    const defaultState = {
+        bill: 0,
+        people: 0,
+        tip: 0,
+    }
+
+    const [state, setState] = useState(defaultState);
+    const [inputIsValid, setInputIsValid] = useState(true);
+    const [buttonIsDisabled, setButtonIsDisabled] = useState(true);
+
+    const [tipPerPerson, setTipPerPerson] = useState(0);
+    const [totalPerPerson, setTotalPerPerson] = useState(0);
+
+    const tipPercentage = [5, 10, 15, 20, 50];
+
+    const handleInputChange = (e) => {
+        const inputValue = e.target.value;
+        const inputName = e.target.name;
+    
+
+    if (inputName === 'people' && inputValue === 0) {
+        setInputIsValid(false);
+    } else if (inputName === 'people' && inputValue !== 0) {
+        setInputIsValid(true);
+    }
+
+    }
         return (
             <Row>
             <Col lg={6}>
@@ -59,6 +86,5 @@ class TipForm extends Component {
     </Row>
         )
     }
-}
 
 export default TipForm;
