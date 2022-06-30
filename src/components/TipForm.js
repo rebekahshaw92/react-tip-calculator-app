@@ -109,20 +109,20 @@ const TipForm = () => {
             <Col lg={6}>
                 <div className="tipAmount">
                     <Row>
-                        <Col xs={8}>
+                        <Col xs={7}>
                             <h6 className="tipAmountTitle">Tip Amount</h6>
                             <h7 className="person">/ person</h7>
                         </Col>
-                        <Col xs={4}>
+                        <Col xs={3}>
                             <h2 className="amount">${tipAmount}</h2>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={8}>
+                        <Col xs={7}>
                         <h6 className="totalTitle">Total</h6>
                         <h7 className="person">/ person</h7>
                         </Col>
-                        <Col xs={4}>
+                        <Col xs={3}>
                         <h2 className="amount totalAmount">${totalAmount}</h2>
                         </Col>
                     </Row>

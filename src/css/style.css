@@ -124,6 +124,11 @@ body {
     font-size: 34px;
   }
 
+ .percentage {
+    height: 45px;
+    width: 130px;
+  }
+
   .active.percentage {
     color: #00494d;
     background-color: #26c0ab;
@@ -131,6 +136,10 @@ body {
   }
 
   @media (min-width: 992px) {
+    .amount {
+      font-size: 36px;
+    }
+
     .calculator {
       margin: 50px;
       height: 550px;
@@ -141,7 +150,7 @@ body {
     }
 
     .bill, .people {
-      width: 300px !important;
+      width: 450px !important;
     }
 
     .custom {
