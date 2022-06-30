@@ -28,11 +28,11 @@ Users should be able to:
 
 #### Desktop
 
-![Desktop](src/components/images/desktop.png)
+![Desktop](src/images/desktop.png)
 
 #### Mobile
 
-![Mobile](src/components/images/mobile.png)
+![Mobile](src/images/mobile.png)
 
 ### Links
 
